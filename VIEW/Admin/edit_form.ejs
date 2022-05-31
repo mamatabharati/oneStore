@@ -1,0 +1,36 @@
+<%-include('../Includes/header.ejs')%>
+    <link rel="stylesheet" href="/CSS/style.css">
+    </head>
+
+    <body>
+        
+        <%-include('../Includes/navigation.ejs')%>
+
+        <h4 class="form_heading">EDIT DETAILS:</h4>
+            <div class="edit_form">
+                <form action="/edit_page" method="POST">
+
+
+                    <label for="ptitle">ENTER PRODUCT BRAND:</label>
+                    <input type="text" name="pbrand" value="<%=data.p_brand%>"class="input_form"><br><br>
+
+                    <label for="ptitle">ENTER PRODUCT TITLE:</label>
+                    <input type="text" name="ptitle" value="<%=data.p_title%>"class="input_form"><br><br>
+
+                    <label for="pprice">ENTER PRODUCT PRICE:</label>
+                    <input type="text" name="pprice"  value="<%=data.p_price%>" class="input_form" ><br><br>
+                     
+                    <label for="pdesc">ENTER PRODUCT DESCRIPTION:</label>
+                    <input type="text" name="pdesc"  value="<%=data.p_desc%>" class="input_form" ><br><br>
+                   
+                    <input type="hidden" name="prod_id" value="<%=data._id%>">
+
+                    <input type="submit"  value="ENTER TO EDIT" class="edit_submit_btn">
+                    
+
+                   
+
+                </form>
+            </div>
+
+            <%-include('../Includes/footer.ejs')%>

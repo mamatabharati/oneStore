@@ -1,0 +1,47 @@
+
+<nav class="navbar navbar-expand-lg topBar">
+    <div class="container-fluid">
+      <a class="navbar-brand logo" href="/homepage">OneStore</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown" >
+        <ul class="navbar-nav " >
+
+<%if(isAuthenticated){%>
+
+          <li class="nav-item ">
+            <a class="nav-link  nav_list <%= path === '/user_details' ? 'active' : '' %>" href="/user_details">USER VIEW</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav_list <%= path === '/add_product' ? 'active' : '' %>" href="/add_product">ADD PRODUCT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav_list <%= path === '/product_details' ? 'active' : '' %>" href="/product_details">ADMIN VIEW</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav_list " href="/cartPage">CART</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav_list " href="/logOut">LOG OUT</a>
+          </li>
+
+<%}%>
+<%if(!isAuthenticated){%>
+             <li class="nav-item">
+               <a class="nav-link nav_list <%= path === '/homepage' ? 'active' : '' %>" href="/homepage">HOME</a>
+             </li>
+
+          <li class="nav-item">
+            <a class="nav-link nav_list <%= path === '/registration' ? 'active' : '' %>" href="/registration">REG FORM</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav_list <%= path === '/loginPage' ? 'active' : '' %>" href="/loginPage">LOGIN</a>
+          </li>
+
+          <%}%>
+        
+        </ul>
+      </div>
+    </div>
+  </nav>

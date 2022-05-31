@@ -1,0 +1,51 @@
+
+<%-include('../Includes/header.ejs')%>
+<link rel="stylesheet" href="/CSS/style.css">
+    </head>
+    <body>
+        <%-include('../Includes/navigation.ejs')%>          
+
+    <div class="searchDiv">
+        <form action="/searchProduct" method="POST">
+
+            <input type="hidden" value="<%=csrf_token%>" name="_csrf">
+
+         <input type="text" name="searchId" class="search_input" placeholder="Search for products">
+         <button class="search_btn">Search</button>
+        </form>
+    </div>
+        
+    <%if(data.length>0){%>
+    <div class="container-fluid px-5 py-5 ">
+        <div class="row justify-content-between px-3">
+            <%for(let x of data){%>
+            <div class="block text-center">
+                <img class="image" src="<%=x.p_image%>">
+                <div class="info py-2 px-2">
+                    <div class="row px-3">
+                        <div class="cart">
+                            <p class="mb-0 sm-font"><a href="/" class="nounderlineCart">BUY NOW</a></p>
+                        </div>
+                        <div class="order">
+                            <p class="mb-0 sm-font "><a href="/p_Details/<%=x._id%>" class="nounderlineView">VIEW PRODUCT</a></p>
+                        </div>
+                    </div>
+                    <div class="text-left">
+                        <h5 class="mb-0 mt-2"><%=x.p_brand%></h5>
+                        <small class="text-muted mb-1"><%=x.p_title%></small>
+                    </div>
+                    <div class="row px-3">
+                        <h5>₹ <%=x.p_price%></h5>
+                    </div>
+                </div>
+            </div>
+    <%}%>
+    </div>
+    </div>
+    <%}else{%>
+        <h3>Data not found</h3>
+     <%}%>
+        
+
+ <%-include('../Includes/footer.ejs')%>   
+    

@@ -1,0 +1,48 @@
+
+<%-include('../Includes/header.ejs')%>
+<link rel="stylesheet" href="/CSS/style.css">
+    </head>
+    <body>
+        <%-include('../Includes/navigation.ejs')%>          
+   
+<%if(data.length>0){%>
+ <table border="1" class="table">
+     <tr>
+         <th>Brand</th>
+         <th>Title</th>
+         <th>Price</th>
+         <!-- <th>Product Description</th> -->
+         <th>Image</th>
+         <th>Edit Detail</th>
+         <th>Delete(Get)</th>
+         <th>Delete(Post)</th>
+     </tr>
+<%for(let x of data){%>
+<tr>
+    <td><%=x.p_brand%></td>
+    <td><%=x.p_title%></td>
+    <td><%=x.p_price%></td>
+    <!-- <td><%=x.p_desc%></td> -->
+    <td><img src="../../<%=x.p_image%>" alt="image" class="card-img-top cardImage_admin"></td>
+    <td><button class="edit_btn"><a href="/edit_form/<%=x._id%>" class="nounderline">Edit</a></button></td>
+    <td><button class="delete_btn"><a href="/delete_detail/<%=x._id%>" class="nounderline">Delete</a></button></td>
+    <td>
+        <form action="/deleteProduct" method="POST">
+            
+            <input type="hidden" name="del_id" value="<%=x._id%>">
+            <button type="submit" class="delete_btn">Delete</button>
+            
+
+        </form>
+    </td>
+</tr>
+
+    <%}%>
+    <%}else{%>
+        <h3>Data not found</h3>
+     <%}%>
+
+ </table>
+
+ <%-include('../Includes/footer.ejs')%>   
+    

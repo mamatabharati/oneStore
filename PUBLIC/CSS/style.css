@@ -1,0 +1,598 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.div_body{
+     background-image: linear-gradient(to right bottom,rgb(26, 173, 124),rgba(62, 193, 226, 0.726)); 
+    height:600px;
+   
+}
+.heading{
+    color:rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 0%;
+    padding-top: 3%;
+    font-weight: bold;
+}
+
+.mainbody{
+    background-color: rgb(255, 255, 255);
+    padding-left: 7.5%;
+    padding-right: 2%;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    margin-left:32%;
+    margin-right: 30%;
+    margin-top: 2%;
+}
+
+.submitBtn{
+    margin-left: 28%;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top:2%;
+    padding-bottom: 2%;
+    color:rgb(255, 255, 255);
+    font-weight: bolder;
+    background-color:rgb(26, 173, 124);
+}
+
+.submitBtn:hover{
+    background-color:rgba(62, 193, 226, 0.726);
+    color:black;
+}
+
+.inputadd_products{
+  padding-left: 3%;
+  padding-right:3%;
+  width:80%;
+  padding-top:1%;
+  padding-bottom:1%;
+  margin-left:0%; 
+  border:2px solid rgb(33, 24, 78);
+  color:black;
+  font-weight:600;
+}
+
+.topBar{
+    background-color:rgb(7, 7, 58);
+}
+.logo{
+    color:#189c8d;
+    font-weight: bolder;
+}
+.nav_list{
+    color:rgb(253, 253, 253);
+    font-weight: bolder;
+}
+.nav_list:hover{
+    color: rgba(144, 203, 252, 0.726);
+}
+
+.table{
+    background-color: rgb(223, 241, 245);
+}
+
+.cardbtn{
+    margin-left: 33%;
+    background-color: transparent;
+    border-radius: 8px;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top:2%;
+    padding-bottom: 2%;
+    text-decoration: none;
+    font-weight: bold;
+}
+.cardbtn:hover{
+    background-color: rgb(236, 201, 217);
+    color:black ;
+}
+
+
+.card{
+    padding-top: 2%;
+    margin-top: 5%;
+    background-color: rgb(245, 229, 209);
+}
+
+.cards{
+    margin-left: 30rem;
+    margin-top: 20%;
+    background-color: antiquewhite;
+}
+.card-titled{
+   padding-bottom: 3%;
+   background-color: rgb(161, 224, 240);
+ padding-top: 3%;
+   padding-left:5%;
+ color:rgb(61, 44, 138);
+}
+.card-body2{
+    padding:0%;
+    height:30%;
+}
+
+.card-texts{
+    padding-left:5%;
+    padding-top: 2%;
+}
+
+.edit_btn{
+    padding-left: 9.5%;
+    padding-right: 9.5%;
+    padding-top:2%;
+    padding-bottom: 2%;
+    font-weight: bolder;
+    background-color:transparent;
+    border-radius: 8px;
+}
+.edit_btn:hover{
+    background-color: rgb(240, 212, 221);
+    /* color: black; */
+    color:rgb(3, 0, 0);
+}
+
+.edit_form{
+    background-color: rgb(181, 233, 236);
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 2%;
+    padding-left: 6%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    color:rgb(61, 44, 138);
+    font-weight: bolder;
+}
+
+.input_form{
+    width:80%; 
+    display:block;
+    border-radius: 6px;
+}
+
+.form_heading{
+     /* padding-bottom: 3%;  */
+    /* color: rgba(228, 62, 126, 0.726); */
+    font-weight: bolder;
+   text-align: center;
+    padding-top: 3%;
+    margin-bottom: 0%;
+    color:rgb(61, 44, 138);
+    margin-top: 0%;
+}
+
+.edit_submit_btn{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top:2%;
+    padding-bottom: 2%;
+    background-color:transparent;
+    color:black;
+    border-radius: 8px;
+    margin-left: 24%;
+    font-weight: bold;
+}
+
+.edit_submit_btn:hover{
+    background-color:rgb(18, 2, 54);
+    color:rgb(255, 255, 255);
+   
+}
+
+.delete_btn{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top:2%;
+    padding-bottom: 2%;
+    background-color:transparent;
+    color:rgb(81, 95, 224);
+    border-radius: 8px;
+    font-weight: bold;
+}
+.delete_btn:hover{
+    background-color: rgb(240, 212, 221);
+    color:rgb(3, 0, 0);
+}
+
+.nounderline{
+    text-decoration: none;
+    
+}
+
+.nounderline:hover{
+    color:rgb(28, 63, 128);
+}
+
+.searchDiv{
+    padding-top: 1.5%;
+    padding-bottom: 0.1%;
+    background-color: rgb(255, 255, 255);
+}
+.search_input{
+    width:20%;
+    margin-left:70%;
+    padding-left: 2%;
+    border-color: rgb(159, 178, 179);
+
+}
+.search_btn{
+    padding: 4px 15px;
+    background-color: white;
+    color:#00796B;
+    font-weight:bold ;
+}
+.search_btn:hover{
+background-color:#00796B ;
+color:white;
+}
+.div_reg{
+    background-image: linear-gradient(to right bottom,rgb(33, 25, 102),rgba(48, 255, 7, 0.726)); 
+    height:600px;
+}
+
+.reg_heading{
+    color:rgb(252, 252, 252);
+    text-align: center;
+    margin-top: 0%;
+    padding-top: 3%;
+    font-weight: bold;
+}
+
+.regBody{
+    background-color: rgb(255, 255, 255);
+    padding-left: 7.5%;
+    padding-right: 2%;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    margin-left:32%;
+    margin-right: 30%;
+    margin-top: 2%;
+}
+
+.submit_Btn{
+    margin-left: 28%;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top:2%;
+    padding-bottom: 2%;
+    color:rgb(255, 255, 255);
+    font-weight: bolder;
+    background-color:rgb(7, 7, 58);
+}
+.submit_Btn:hover{
+    color:rgb(7, 7, 58);
+    background-color:rgba(48, 255, 7, 0.726);
+}
+
+.div_login{
+    background-image: linear-gradient(to right bottom,rgb(15, 8, 80),rgba(128, 199, 240, 0.726)); 
+    height:600px;
+  }
+
+  .login_heading{
+    color:rgb(252, 252, 252);
+    text-align: center;
+    margin-top: 0%;
+    padding-top: 3%;
+    font-weight: bold;
+}
+
+.loginBody{
+    background-color: rgb(255, 255, 255);
+    padding-left: 7.5%;
+    padding-right: 2%;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    margin-left:32%;
+    margin-right: 30%;
+    margin-top: 2%;
+}
+
+.submit_login{
+    margin-left: 16%;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top:2%;
+    padding-bottom: 2%;
+    color:rgb(255, 255, 255);
+    font-weight: bolder;
+    background-color:rgb(7, 7, 58);
+}
+.submit_login:hover{
+    background-color: rgba(128, 199, 240, 0.726);
+    color:rgb(7, 7, 58);
+    
+}
+
+  .div_login{
+    background-image: linear-gradient(to right bottom,rgb(15, 8, 80),rgba(128, 199, 240, 0.726)); 
+    height:600px;
+  }
+
+  .login_heading{
+    color:rgb(252, 252, 252);
+    text-align: center;
+    margin-top: 0%;
+    padding-top: 3%;
+    font-weight: bold;
+}
+
+.loginBody{
+    background-color: rgb(255, 255, 255);
+    padding-left: 7.5%;
+    padding-right: 2%;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    margin-left:32%;
+    margin-right: 30%;
+    margin-top: 2%;
+}
+
+.submit_login{
+    margin-left: 16%;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top:2%;
+    padding-bottom: 2%;
+    color:rgb(255, 255, 255);
+    font-weight: bolder;
+    background-color:rgb(7, 7, 58);
+}
+.submit_login:hover{
+    background-color: rgba(128, 199, 240, 0.726);
+    color:rgb(7, 7, 58);
+    
+}
+
+
+.input_reg{
+    padding-left: 3%;
+    padding-right:3%;
+    width:80%;
+    padding-top:1%;
+    padding-bottom:1%;
+    margin-left:0%; 
+    border:2px solid rgb(33, 24, 78);
+    color:black;
+    font-weight:600;
+  }
+
+  .active{
+      border:#45f3df 1px solid;
+  }
+
+  .cardImage{
+   width: 100%;
+  height: 15vw;
+  }
+
+  .errorMessage{
+      color:rgb(241, 67, 67);
+      margin-top: 6%;
+      font-weight: bold;
+    
+  }
+
+  .cardImage_admin{
+      width:80%;
+      height:5vw;
+  }
+
+  .footer{
+      color:antiquewhite;
+      background-color: rgb(7, 7, 58);
+      padding-top: 1%;
+      padding-bottom: 0.5%;
+      padding-left: 2%;
+      margin-top:0;
+      position: relative;
+  }
+
+
+  .smicons{
+    padding-left: 1%;
+    text-decoration: none;
+    color: white;
+  } 
+  
+  .smicons:hover{
+   color:aqua;
+ }
+
+  .smicon{
+    padding-left: 45%;
+    text-decoration: none;
+    color: white;
+    }
+
+    .smicon:hover{
+     color:#00796B;
+   }
+
+/* product detail page */
+.container{
+    height:90vh;
+    margin-top: 20px;
+}
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #fffafa;
+   
+}
+
+.hedding {
+    font-size: 20px;
+    color: #ab8181;
+}
+
+.main-section {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, 5%);
+}
+
+.left-side-product-box img {
+    width: 100%;
+}
+
+.left-side-product-box .sub-img img {
+    margin-top: 5px;
+    width: 83px;
+    height: 100px;
+}
+
+.right-side-pro-detail span {
+    font-size: 15px;
+}
+
+.right-side-pro-detail p {
+    font-size: 25px;
+    color: #a1a1a1;
+}
+
+.right-side-pro-detail .price-pro {
+    color: #E45641;
+}
+
+.right-side-pro-detail .tag-section {
+    font-size: 18px;
+    color: #5D4C46;
+}
+
+.pro-box-section .pro-box img {
+    width: 100%;
+    height: 200px;
+}
+
+@media (min-width:360px) and (max-width:640px) {
+    .pro-box-section .pro-box img {
+        height: auto;
+    }
+}
+
+.checked{
+    color: #ff291a;
+ }
+ .ptitle{
+ text-transform:uppercase;
+}
+
+/* user product view */
+
+.block {
+    position: relative;
+    width: 22%;
+    padding-top: 10px;
+    margin-bottom: 165px;
+}
+
+.image {
+    width:100%;
+    height: 300px;
+}
+
+.info {
+    position: absolute;
+    width: 94%;
+    top: 280px;
+    left: 3%;
+    background-color: #fff;
+}
+
+.cart {
+    background-color: #26A69A;
+    color: #fff;
+    padding: 6px;
+    width: 48%;
+    margin-right: 2%;
+    border: 2px solid #26A69A;
+    cursor: pointer;
+}
+
+.cart:hover {
+    background-color: #00796B;
+}
+
+.order {
+    color: #26A69A;
+    padding: 6px 5px;
+    width: 48%;
+    margin-left: 2%;
+    border: 2px solid #26A69A;
+    cursor: pointer;
+    
+}
+.nounderlineCart{
+    text-decoration:none ;
+    color:#fff;
+}
+.nounderlineCart:hover{
+    color:rgb(255, 255, 255);
+}
+.nounderlineView{
+    text-decoration:none ;
+    
+}
+.nounderlineView:hover{
+    color:#fff;
+}
+.viewBox:hover{
+    color:#fff;
+}
+.order:hover {
+    color: #fff;
+    background-color: #00796B;
+}
+
+.sm-font {
+    font-size: 12px;
+}
+
+@media screen and (max-width: 992px) {
+    .block {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .block {
+        width: 100%;
+    }
+}
+
+/* homepage */
+
+.row{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.col-2{
+    flex-basis:50%;
+    min-width:300px;
+}
+.col-2 img{
+    max-width: 100%;
+    padding:50px 0;
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin:25px 0;
+    padding:0px 50px;
+}
+.col-2 p{
+    margin:0;
+    padding:0px 50px;
+}
+
+/* cartPage */
+.cartImage{
+    height: 70px;
+    width:70px;
+}

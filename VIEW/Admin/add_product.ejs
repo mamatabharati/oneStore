@@ -1,0 +1,31 @@
+<%-include('../Includes/header.ejs')%>
+    <link rel="stylesheet" href="/CSS/style.css">
+    </head>
+
+    <body>
+        <%-include('../Includes/navigation.ejs')%>
+<div class="div_body">
+                <h2 class="heading">ADD PRODUCT FORM</h2>
+
+                <form action="/front_page" method="POST" enctype="multipart/form-data">
+
+
+                    <div class="mainBody">
+                       <input type="text" name="brand" placeholder="ENTER PRODUCT BRAND:" class="inputadd_products"><br><br>
+
+                        <input type="text" name="title" placeholder="ENTER PRODUCT TITLE:" class="inputadd_products"><br><br>
+
+                        <input type="text" name="price" placeholder="ENTER PRODUCT PRICE:" class="inputadd_products"><br><br>
+
+                        <input type="text" name="desc" placeholder="ENTER DESCRIPTION:" class="inputadd_products"><br><br>
+
+                        <input type="file" name="productImage" class="inputadd_products"><br><br>
+
+                        <input type="submit" value="SUBMIT" class="submitBtn">
+                    </div>
+                </form>
+</div>
+    
+            
+
+            <%-include('../Includes/footer.ejs')%>   

@@ -1,0 +1,88 @@
+<%-include('../Includes/header.ejs')%>
+<link rel="stylesheet" href="/CSS/style.css">
+    </head>
+    <body>
+        <%-include('../Includes/navigation.ejs')%>
+
+      
+        <section class="pt-2 pb-5">
+            <div class="container">
+              <div class="row w-100">
+                  <div class="col-lg-12 col-md-12 col-12">
+                      <h5 class="display-6 mb-2 text-center">Shopping Cart</h5>
+                      <p class="mb-3 text-center">
+                          <i class="text-info font-weight-bold"></i> items in your cart</p>
+                      <table id="shoppingCart" class="table table-condensed table-responsive">
+                          <thead>
+                              <tr>
+                                  <th style="width:60%">Product</th>
+                                  <th style="width:12%">Price</th>
+                                  <th style="width:10%">Quantity</th>
+                                  
+                              </tr>
+                          </thead>
+                          <tbody>
+                            <%if(data.length>0){%>
+                               <%for(let c of data){%>
+                              <tr>
+                                  <td data-th="Product">
+                                      <div class="row">
+                                          <div class="col-md-3 text-left">
+                                              <img src="<%=c.cart[0].p_image%>"  class="img-fluid d-none d-md-block rounded mb-2 shadow cartImage">
+                                          </div>
+                                          <div class="col-md-9 text-left mt-sm-2">
+                                            <p class="font-weight-light"><%=c.cart[0].p_brand%></p>
+                                              <p class="font-weight-light"><%=c.cart[0].p_title%></p>
+                                          </div>
+                                      </div>
+                                  </td>
+                                  <td data-th="Price">₹ <%=c.cart[0].p_price%></td>
+                                  <td data-th="Quantity"><%=c.quantity%>
+                                  </td>
+                                  <td class="actions" data-th="">
+                                      <div class="text-right">
+                                      <form action="/deleteCartItem" method="POST">
+                                        <input type="hidden" value="<%=csrf_token%>" name="_csrf">
+                                        <input type="hidden" name="delete_id" value="<%=c._id%>">
+                                        <button type="submit" class="btn btn-white border-secondary bg-white btn-md mb-2 del_btn">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                    </form>
+                                      </div>
+                                  </td>
+                              </tr>
+                   </tbody>
+                   <%}%>
+                   <div class="float-right text-right">
+                    <h4><b>Subtotal:</b></h4>
+                    <h1></h1>
+                </div>
+               
+                      <%}else{%>
+                        <h3>Data not found</h3>
+                        <%}%>
+                      
+                     
+                          
+                   
+                    </table>      
+                  </div>
+              </div>
+             
+              <div class="row mt-4 d-flex align-items-center">
+                  <div class="col-sm-6 order-md-2 text-right">
+                      <a href="" class="btn btn-primary mb-4 btn-lg pl-5 pr-5">Checkout</a>
+                  </div>
+                  <div class="col-sm-6 mb-3 mb-m-1 order-md-1 text-md-left">
+                      <a href="/user_details">
+                          <i class="fas fa-arrow-left mr-2"></i> Continue Shopping</a>
+                  </div>
+              </div>
+          </div>
+          
+          </section>
+
+          
+         
+
+        <!-- <%-include('../Includes/footer.ejs')%>  -->

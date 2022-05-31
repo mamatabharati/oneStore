@@ -1,0 +1,33 @@
+<%-include('../includes/header.ejs')%>
+    <link rel="stylesheet" href="/CSS/style.css">
+    </head>
+
+    <body>
+        <%-include('../includes/navigation.ejs')%>
+<div class="div_login">
+                <h2 class="login_heading">LOGIN</h2>
+
+                <form action="/login" method="POST">
+
+                    <div class="loginBody">
+
+                        <input type="text" name="l_email" class="input_reg" placeholder="Enter Email Id:" 
+                        value="<%if(cookie_data.cookieData){%> <%=cookie_data.cookieData.emailCookie%> <%}%>"><br><br>
+
+                        <input type="password" name="l_password" class="input_reg" placeholder="Enter Password:"><br><br>
+
+                        <input type="submit" value="ENTER TO LOGIN" class="submit_login"><br>
+
+                        <input type="checkbox" name="checked">
+                        <label for="checked">Remember me</label>
+
+                      <%if(errorMsg){%>
+                        <div class="errorMessage"><%=errorMsg%></div>
+                        <%}%>
+
+                    </div>
+                </form>
+         </div>
+    
+           
+ <%-include('../includes/footer.ejs')%>   
