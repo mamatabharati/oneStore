@@ -26,6 +26,43 @@ exports.post_productData=(req,res)=>{
     console.log(product_img);
     const pImage_url=product_img.path;
 
+    if(!pbrand)
+    {
+        return res.status(401).json({
+            success:false,
+            message:"brand name required"
+        })
+    }
+    else if(!ptitle)
+   {
+    return res.status(401).json({
+        success:false,
+        message:"title required"
+    }) 
+   }
+   else if(!pprice)
+   {
+    return res.status(401).json({
+        success:false,
+        message:"price required"
+    })  
+   }
+   else if(!pdesc)
+   {
+    return res.status(401).json({
+        success:false,
+        message:"Description required"
+    }) 
+   }
+   else if(!product_img)
+   {
+    return res.status(401).json({
+        success:false,
+        message:"image required"
+    }) 
+   }
+
+   else{
     const formData=new ProductModel({
         p_brand:pbrand,
         p_title:ptitle,
@@ -36,14 +73,29 @@ exports.post_productData=(req,res)=>{
 
     formData.save()
     .then(results=>{
-        console.log("product saved");
+        if(results)
+        {
+            return res.status(200).json({
+               success:true,
+               message:"product saved"
+            })
+        }
+       
     })
     .catch(err=>{
-        console.log("error at saving products",err);
+        return res.status(401).json({
+         success:false,
+         message:"error at saving producting"
+        })
+        
     });
 
-    res.redirect('/product_details');
-}
+    // res.redirect('/product_details');
+   }
+   }
+
+
+   
 
     
 exports.get_productDetails=(req,res)=>{
